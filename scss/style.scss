@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// base
+@import "./base/common";
+@import "./base/normalize";
+@import "./base/reset";
+
+// components
+@import "./components/header";
+@import "./components/footer";
+
+// pages
+@import "./pages/main";

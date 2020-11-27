@@ -1,0 +1,51 @@
+// visual common
+
+
+
+
+// section visual
+.visual {
+  background: rgb(52, 152, 219);
+  .container {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text {
+    h2 {
+      font-size: 38px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    .btn-readmore {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 164px;
+      height: 52px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #FFF;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:hover {
+        background: #ff5252;
+        border-color: #ff5252;
+      }
+    }
+  }
+  .image {
+    img {
+
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// header common
+
+// top-header
+.top-header {
+  background: #333;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sns-links {
+    display: flex;
+    a {
+        color: #fff;
+        font-size: 18px;
+        padding: 12px;
+        transition: 0.3s;
+        &:hover {
+          &.twitter {
+            background: #3db0e0;
+          }
+          &.youtube {
+            background: #e81d1d;
+          }
+          &.instagram {
+            background: #6d116d;
+          }
+          &.facebook {
+            background: #1e21c6;
+          }
+          &.skype {
+            background: #00b5fd;
+          }
+        }
+      }
+    }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .item {
+      font-size: 14px;
+      color: #dedede;
+      + .item {
+        margin-left: 20px;
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// main-header
+.main-header {
+  background: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    img {
+      max-height: 45px;
+    }
+  }
+  .gnb {
+    .gnb-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        a {
+          padding: 0 15px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #2F362F;
+          display: flex;
+          align-items: center;
+          height: 84px;
+          &.home {
+            color: #3498db;
+          }
+          &:hover {
+            color: #3498db;
+          }
+        }
+      }
+    }
+  }
+}
+
