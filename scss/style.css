@@ -428,6 +428,27 @@ img {
       .main-header .gnb .gnb-menu li a:hover {
         color: #3498db; }
 
+.title-area {
+  margin-bottom: 40px; }
+  .title-area h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  .title-area p {
+    font-size: 16px;
+    line-height: 1.5; }
+
+a:hover {
+  color: #3498db; }
+
+ul.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; }
+  ul.grid li {
+    padding: 0 15px;
+    width: 33.333%; }
+
 .visual {
   background: #3498db; }
   .visual .container {
@@ -476,5 +497,217 @@ img {
       transition: 0.3s; }
       .sponsor .img img:hover {
         opacity: 1; }
+
+.amazing-features {
+  background: #fff;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea; }
+  .amazing-features .container {
+    padding: 90px 0 50px; }
+  .amazing-features .title-area h2 {
+    color: #2F362F; }
+  .amazing-features .title-area p {
+    color: #7c8595; }
+  .amazing-features ul.grid li .item a img {
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  .amazing-features ul.grid li .item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2F362F;
+    margin-bottom: 10px; }
+  .amazing-features ul.grid li .item p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #7c8595;
+    padding: 0 5px; }
+
+.difference {
+  background: #ffffff; }
+  .difference .container {
+    padding: 90px 0;
+    display: flex; }
+  .difference .media {
+    width: 50%;
+    padding: 0 20px; }
+    .difference .media iframe {
+      width: 100%;
+      height: 100%; }
+  .difference .qna {
+    width: 50%;
+    padding: 0 20px; }
+    .difference .qna li {
+      border-bottom: 1px solid #ddd; }
+      .difference .qna li.is-active .question {
+        border-bottom: 3px solid #3498db; }
+      .difference .qna li.is-active .answer {
+        display: block; }
+      .difference .qna li .question {
+        padding: 0 15px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: #656565;
+        border-bottom: 3px solid transparent; }
+        .difference .qna li .question i {
+          font-size: 18px;
+          font-weight: 600;
+          margin-right: 10px; }
+      .difference .qna li .answer {
+        display: none; }
+        .difference .qna li .answer p {
+          padding: 20px 15px;
+          font-size: 15px;
+          line-height: 1.3;
+          color: #7c8595; }
+
+.latest-projects {
+  background: #393f43;
+  text-align: center; }
+  .latest-projects .container {
+    padding: 90px 0 50px 0; }
+  .latest-projects .title-area h2 {
+    color: #ddd; }
+  .latest-projects .title-area p {
+    color: #bbb; }
+  .latest-projects ul.grid li .item {
+    border-radius: 5px;
+    overflow: hidden;
+    border-bottom: 3px solid #e0e0e0; }
+    .latest-projects ul.grid li .item .thumb {
+      position: relative; }
+      .latest-projects ul.grid li .item .thumb:hover .screen {
+        opacity: 1; }
+      .latest-projects ul.grid li .item .thumb a {
+        display: flex; }
+        .latest-projects ul.grid li .item .thumb a img {
+          width: 100%; }
+      .latest-projects ul.grid li .item .thumb .screen {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.4s; }
+        .latest-projects ul.grid li .item .thumb .screen i {
+          font-size: 40px;
+          color: #fff; }
+    .latest-projects ul.grid li .item .desc {
+      background: #fff;
+      padding: 12px 20px 18px; }
+      .latest-projects ul.grid li .item .desc h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #454545;
+        margin-bottom: 10px; }
+      .latest-projects ul.grid li .item .desc p {
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1;
+        color: #7c8595; }
+
+.projects-completed {
+  background: #2f3539;
+  text-align: center; }
+  .projects-completed .container {
+    padding: 40px 0 30px; }
+  .projects-completed ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; }
+    .projects-completed ul li {
+      padding: 0 15px;
+      width: 25%; }
+      .projects-completed ul li .item i {
+        font-size: 45px;
+        color: #3498db;
+        margin-bottom: 10px; }
+      .projects-completed ul li .item h3 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #ddd;
+        margin-bottom: 10px; }
+      .projects-completed ul li .item p {
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1;
+        color: #bbb; }
+
+.amazing-features2 {
+  background: #fff;
+  text-align: center; }
+  .amazing-features2 .container {
+    padding: 90px 0 30px; }
+  .amazing-features2 .title-area h2 {
+    color: #2F362F; }
+  .amazing-features2 .title-area p {
+    color: #7c8595; }
+  .amazing-features2 ul.grid li .item {
+    margin-bottom: 50px; }
+    .amazing-features2 ul.grid li .item a img {
+      margin-bottom: 20px; }
+    .amazing-features2 ul.grid li .item h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2F362F;
+      margin-bottom: 20px; }
+    .amazing-features2 ul.grid li .item p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #7c8595;
+      padding: 0 10px; }
+
+.testimonials {
+  background: #3498db; }
+  .testimonials .container {
+    padding: 90px 0; }
+  .testimonials .title-area {
+    text-align: center; }
+    .testimonials .title-area h2 {
+      color: #ffffff; }
+    .testimonials .title-area p {
+      color: #fff; }
+  .testimonials ul.grid li .item .comment {
+    padding: 30px;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #7c8595;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative; }
+    .testimonials ul.grid li .item .comment::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      position: absolute;
+      transform: rotate(45deg);
+      left: 52px;
+      bottom: -8px; }
+  .testimonials ul.grid li .item .client-info {
+    display: flex;
+    align-items: center;
+    padding: 0 20px; }
+    .testimonials ul.grid li .item .client-info img {
+      width: 80px;
+      border: 4px solid #fff;
+      border-radius: 50%; }
+    .testimonials ul.grid li .item .client-info .detail {
+      margin-left: 20px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.5; }
+      .testimonials ul.grid li .item .client-info .detail .name {
+        font-weight: 600; }
+      .testimonials ul.grid li .item .client-info .detail .role {
+        font-family: sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
