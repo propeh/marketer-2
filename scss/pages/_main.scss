@@ -13,10 +13,14 @@
   }
 }
 
-a {
-  &:hover {
-    color: #3498db;
-  }
+//a {
+//  &:hover {
+//    color: #3498db;
+//  }
+//}
+
+a:hover {
+  color: #3498db;
 }
 
 ul.grid {
@@ -410,7 +414,299 @@ ul.grid {
 
 // section latest-news
 .latest-news {
+  background: #fff;
   .container {
+    padding: 90px 0;
+  }
+  .title-area {
+    text-align: center;
+    h2 {
+      color: #2F362F;
+    }
+    p {
+      color: #7c8595;
+    }
+  }
+  ul.grid {
+    li {
+      .item {
+        border-radius: 5px;
+        overflow: hidden;
 
+        .thumb {
+          position: relative;
+          &:hover {
+            .screen {
+              opacity: 1;
+            }
+          }
+          img {
+          }
+          .screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: 0.4s;
+            a {
+              i {
+                font-size: 40px;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .desc {
+          background: #f6f7f8;
+          padding: 26px;
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: red;
+            margin-bottom: 16px;
+          }
+          .info {
+            display: flex;
+            margin-bottom: 16px;
+            .info-item {
+              display: flex;
+              align-items: center;
+              + .info-item {
+                margin-left: 15px;
+                border-left: 1px solid #656565;
+                padding-left: 15px;
+              }
+              i {
+                color: #656565;
+                font-size: 18px;
+              }
+              a {
+                font-size: 14px;
+                color: red;
+                padding-left: 5px;
+                &.name {
+                  font-style: italic;
+                }
+              }
+            }
+          }
+          .content {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #7c8595;
+            margin-bottom: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// section amazing-team
+.amazing-team {
+  background: #393f43;
+  text-align: center;
+  .container {
+    padding: 90px 0;
+  }
+  .title-area {
+    h2 {
+      color: #ddd;
+    }
+    p {
+      color: #bbb;
+    }
+  }
+  ul.grid {
+    li {
+      .item {
+        img {
+          width: 125px;
+          border: 6px solid #fff;
+          border-radius: 50%;
+          margin-bottom: 20px;
+        }
+        .name {
+          font-size: 18px;
+          font-weight: 600;
+          color: #ddd;
+          margin-bottom: 8px;
+        }
+        .role {
+          font-size: 15px;
+          font-style: italic;
+          color: #ccc;
+          margin-bottom: 40px;
+          position: relative;
+          &::after {
+            content: "";
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            position: absolute;
+            right: 158px;
+            bottom: -24px;
+          }
+        }
+        .intro {
+          font-size: 15px;
+          line-height: 1.5;
+          color: #ccc;
+          padding: 0 30px;
+          margin-bottom: 10px;
+        }
+        .sns-link {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              a {
+                i {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// section working-process
+.working-process {
+  background: #fff url("http://demo.ovathemes.com/marketer/wp-content/themes/marketerova/assets/img/process-line.png") 50% 50% no-repeat;
+  text-align: center;
+  .container {
+    padding: 90px 0 100px;
+  }
+  .title-area {
+    h2 {
+      color: #2F362F;
+    }
+    p {
+      color: #7c8595;
+    }
+  }
+  ul {
+    display: flex;
+    margin: 0 -15px;
+    li {
+      padding: 0 15px;
+      width: 25%;
+      .item {
+        .thumb {
+          position: relative;
+          display: inline-block;
+          margin-bottom: 20px;
+          &:hover {
+            .desc {
+              opacity: 1;
+            }
+          }
+          img {
+            border: 2px dashed #cecece;
+            border-radius: 50%;
+            padding: 5px;
+            background: #fff;
+          }
+          .desc {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #454545;
+            opacity: 0;
+            transition: 0.4s;
+          }
+        }
+        .process {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// section join-waiting
+.join-waiting {
+  background: #3498db;
+  .container {
+    padding: 50px 0;
+    display: flex;
+
+  }
+  .img {
+    padding: 30px 90px;
+    img {
+
+    }
+  }
+  .enter-email {
+    padding: 20px 50px;
+    color: #fff;
+    border-left: 1px solid #fff;
+    p.inform {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .input-email {
+      .input-box {
+        width: 400px;
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        background: transparent;
+        margin-bottom: 5px;
+      }
+      .label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        p {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .check-box {
+          margin: 0 5px;
+        }
+      }
+      .btn-started {
+        width: 150px;
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        background: #fff;
+        color: #3498db;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        transition: 0.4s;
+        &:hover {
+          border: 1px solid #2980b9;
+          color: #fff;
+          background: #2980b9;
+        }
+      }
+    }
   }
 }

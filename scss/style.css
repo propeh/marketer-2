@@ -428,6 +428,11 @@ img {
       .main-header .gnb .gnb-menu li a:hover {
         color: #3498db; }
 
+footer {
+  background: #353535; }
+  footer .footer-top {
+    padding: 60px 0; }
+
 .title-area {
   margin-bottom: 40px; }
   .title-area h2 {
@@ -709,5 +714,209 @@ ul.grid {
         font-weight: 600; }
       .testimonials ul.grid li .item .client-info .detail .role {
         font-family: sans-serif; }
+
+.latest-news {
+  background: #fff; }
+  .latest-news .container {
+    padding: 90px 0; }
+  .latest-news .title-area {
+    text-align: center; }
+    .latest-news .title-area h2 {
+      color: #2F362F; }
+    .latest-news .title-area p {
+      color: #7c8595; }
+  .latest-news ul.grid li .item {
+    border-radius: 5px;
+    overflow: hidden; }
+    .latest-news ul.grid li .item .thumb {
+      position: relative; }
+      .latest-news ul.grid li .item .thumb:hover .screen {
+        opacity: 1; }
+      .latest-news ul.grid li .item .thumb .screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: 0.4s; }
+        .latest-news ul.grid li .item .thumb .screen a i {
+          font-size: 40px;
+          color: #fff; }
+    .latest-news ul.grid li .item .desc {
+      background: #f6f7f8;
+      padding: 26px; }
+      .latest-news ul.grid li .item .desc h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: red;
+        margin-bottom: 16px; }
+      .latest-news ul.grid li .item .desc .info {
+        display: flex;
+        margin-bottom: 16px; }
+        .latest-news ul.grid li .item .desc .info .info-item {
+          display: flex;
+          align-items: center; }
+          .latest-news ul.grid li .item .desc .info .info-item + .info-item {
+            margin-left: 15px;
+            border-left: 1px solid #656565;
+            padding-left: 15px; }
+          .latest-news ul.grid li .item .desc .info .info-item i {
+            color: #656565;
+            font-size: 18px; }
+          .latest-news ul.grid li .item .desc .info .info-item a {
+            font-size: 14px;
+            color: red;
+            padding-left: 5px; }
+            .latest-news ul.grid li .item .desc .info .info-item a.name {
+              font-style: italic; }
+      .latest-news ul.grid li .item .desc .content {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #7c8595;
+        margin-bottom: 14px; }
+
+.amazing-team {
+  background: #393f43;
+  text-align: center; }
+  .amazing-team .container {
+    padding: 90px 0; }
+  .amazing-team .title-area h2 {
+    color: #ddd; }
+  .amazing-team .title-area p {
+    color: #bbb; }
+  .amazing-team ul.grid li .item img {
+    width: 125px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  .amazing-team ul.grid li .item .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 8px; }
+  .amazing-team ul.grid li .item .role {
+    font-size: 15px;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 40px;
+    position: relative; }
+    .amazing-team ul.grid li .item .role::after {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background: #3498db;
+      position: absolute;
+      right: 158px;
+      bottom: -24px; }
+  .amazing-team ul.grid li .item .intro {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ccc;
+    padding: 0 30px;
+    margin-bottom: 10px; }
+  .amazing-team ul.grid li .item .sns-link ul {
+    display: flex;
+    flex-wrap: wrap; }
+
+.working-process {
+  background: #fff url("http://demo.ovathemes.com/marketer/wp-content/themes/marketerova/assets/img/process-line.png") 50% 50% no-repeat;
+  text-align: center; }
+  .working-process .container {
+    padding: 90px 0 100px; }
+  .working-process .title-area h2 {
+    color: #2F362F; }
+  .working-process .title-area p {
+    color: #7c8595; }
+  .working-process ul {
+    display: flex;
+    margin: 0 -15px; }
+    .working-process ul li {
+      padding: 0 15px;
+      width: 25%; }
+      .working-process ul li .item .thumb {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px; }
+        .working-process ul li .item .thumb:hover .desc {
+          opacity: 1; }
+        .working-process ul li .item .thumb img {
+          border: 2px dashed #cecece;
+          border-radius: 50%;
+          padding: 5px;
+          background: #fff; }
+        .working-process ul li .item .thumb .desc {
+          background: rgba(255, 255, 255, 0.9);
+          border-radius: 50%;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          bottom: 5px;
+          left: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 20px;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #454545;
+          opacity: 0;
+          transition: 0.4s; }
+      .working-process ul li .item .process {
+        font-size: 18px;
+        font-weight: 600; }
+
+.join-waiting {
+  background: #3498db; }
+  .join-waiting .container {
+    padding: 50px 0;
+    display: flex; }
+  .join-waiting .img {
+    padding: 30px 90px; }
+  .join-waiting .enter-email {
+    padding: 20px 50px;
+    color: #fff;
+    border-left: 1px solid #fff; }
+    .join-waiting .enter-email p.inform {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 20px; }
+    .join-waiting .enter-email .input-email .input-box {
+      width: 400px;
+      height: 50px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      background: transparent;
+      margin-bottom: 5px; }
+    .join-waiting .enter-email .input-email .label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px; }
+      .join-waiting .enter-email .input-email .label p {
+        font-size: 16px;
+        font-weight: 600; }
+      .join-waiting .enter-email .input-email .label .check-box {
+        margin: 0 5px; }
+    .join-waiting .enter-email .input-email .btn-started {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      background: #fff;
+      color: #3498db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      transition: 0.4s; }
+      .join-waiting .enter-email .input-email .btn-started:hover {
+        border: 1px solid #2980b9;
+        color: #fff;
+        background: #2980b9; }
 
 /*# sourceMappingURL=style.css.map */
