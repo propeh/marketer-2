@@ -13,12 +13,6 @@
   }
 }
 
-//a {
-//  &:hover {
-//    color: #3498db;
-//  }
-//}
-
 a:hover {
   color: #3498db;
 }
@@ -30,6 +24,12 @@ ul.grid {
   li {
     padding: 0 15px;
     width: 33.333%;
+    @media screen and (max-width: 1080px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 
@@ -564,13 +564,8 @@ ul.grid {
         .sns-link {
           ul {
             display: flex;
-            flex-wrap: wrap;
             li {
-              a {
-                i {
 
-                }
-              }
             }
           }
         }
