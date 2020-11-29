@@ -618,6 +618,8 @@ ul.grid {
     .visual .text .btn-readmore:hover {
       background: #ff5252;
       border-color: #ff5252; }
+    .visual .text .btn-readmore .image img {
+      width: 100%; }
 
 .sponsor {
   background: #f6f7f8;

@@ -73,6 +73,11 @@ ul.grid {
         background: #ff5252;
         border-color: #ff5252;
       }
+      .image {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
