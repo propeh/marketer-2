@@ -1,6 +1,140 @@
 footer {
   background: #353535;
-  .footer-top {
+}
+
+.footer-top {
+  .container {
     padding: 60px 0;
+    display: flex;
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 45px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: #3498db;
+        bottom: -25px;
+        left: 0;
+      }
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #dddddd;
+      margin-bottom: 20px;
+    }
+    i {
+      font-size: 18px;
+      color: #ddd;
+    }
+  }
+  .seo-score {
+    width: 25%;
+    padding: 0 15px;
+    p {
+
+    }
+    .btn-check-score {
+      width: 160px;
+      height: 50px;
+      border-radius: 4px;
+      background: #3498db;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+        opacity: 0;
+        transition: 0.4s;
+      }
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .useful-links {
+    width: 25%;
+    padding: 0 15px;
+    ul {
+      li {
+        border-bottom: 1px solid #dddddd;
+        padding: 8px 0;
+        a {
+          font-size: 14px;
+          color: #dddddd;
+          &:hover {
+            color: #3498db;
+          }
+        }
+      }
+    }
+  }
+  .footer-latest-projects {
+    width: 25%;
+    padding: 0 15px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        border: 4px solid #292929;
+        margin: 3px;
+        .item {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: 0.4s;
+          }
+          &:hover {
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-details {
+    width: 25%;
+    padding: 0 15px;
+    .footer-contact {
+      display: flex;
+      margin-bottom: 4px;
+      .footer-contact-p {
+        font-size: 14px;
+        color: #dddddd;
+        margin-left: 10px;
+        a {
+          font-size: 14px;
+          color: #ddd;
+          &:hover {
+            color: #3498db;
+          }
+        }
+      }
+    }
   }
 }
