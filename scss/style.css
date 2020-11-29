@@ -647,6 +647,9 @@ ul.grid {
     color: #2F362F; }
   .amazing-features .title-area p {
     color: #7c8595; }
+    @media screen and (max-width: 768px) {
+      .amazing-features .title-area p {
+        width: 100%; } }
   .amazing-features ul.grid li .item a img {
     border-radius: 50%;
     margin-bottom: 20px; }
