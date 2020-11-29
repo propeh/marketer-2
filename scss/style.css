@@ -1,10 +1,24 @@
 body {
   font-family: 'Roboto', 'Noto Sans KR', sans-serif; }
 
+#wrap {
+  width: 100%; }
+
 .container {
   width: 1170px;
   margin: 0 auto;
   padding: 0 15px; }
+  @media screen and (max-width: 1170px) {
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0 15px; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+      min-width: 468px;
+      margin: 0 auto;
+      padding: 0 15px; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -402,6 +416,9 @@ img {
         margin-left: 20px; }
       .top-header .contact .item i {
         font-size: 20px; }
+  @media screen and (max-width: 768px) {
+    .top-header {
+      display: none; } }
 
 .main-header {
   background: #fff; }
@@ -409,8 +426,17 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      .main-header .container {
+        display: block; } }
   .main-header .logo img {
     max-height: 45px; }
+  @media screen and (max-width: 768px) {
+    .main-header .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px; } }
   .main-header .gnb .gnb-menu {
     display: flex;
     justify-content: center;
