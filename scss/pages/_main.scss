@@ -39,7 +39,7 @@ ul.grid {
 .visual {
   background: rgb(52, 152, 219);
   .container {
-    height: 500px;
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +57,7 @@ ul.grid {
       color: #fff;
       margin-bottom: 30px;
     }
-    .btn-readmore {
+    .btn-read-more {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -73,9 +73,25 @@ ul.grid {
         background: #ff5252;
         border-color: #ff5252;
       }
-      .image {
-        img {
-          width: 100%;
+    }
+  }
+  .image {
+    img {
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      display: block;
+      padding: 20px 0;
+      .text {
+        .btn-read-more {
+          margin: 0 auto 10px;
         }
       }
     }
