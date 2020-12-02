@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "./utils/mixin";
+
 // base
 @import "./base/common";
 @import "./base/normalize";
