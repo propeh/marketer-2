@@ -1,11 +1,5 @@
 // header common
 
-@media screen and (max-width: 1170px) {
-
-}
-@media screen and (max-width: 768px) {
-
-}
 
 // top-header
 .top-header {
@@ -55,10 +49,6 @@
       }
     }
   }
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 }
 
 // main-header
@@ -68,20 +58,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 768px) {
-      display: block;
-
-    }
   }
   .logo {
     img {
       max-height: 45px;
-    }
-    @media screen and (max-width: 768px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
     }
   }
   .gnb {
@@ -89,9 +69,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      @include screen-sm {
-
-      }
       li {
         a {
           padding: 0 15px;

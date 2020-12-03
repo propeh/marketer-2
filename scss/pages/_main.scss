@@ -38,8 +38,8 @@ ul.grid {
 // section visual
 .visual {
   background: rgb(52, 152, 219);
+  padding: 50px 0;
   .container {
-    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,22 +78,6 @@ ul.grid {
   .image {
     img {
       width: 100%;
-      @media screen and (max-width: 768px) {
-        width: 70%;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .container {
-      display: block;
-      padding: 20px 0;
-      .text {
-        .btn-read-more {
-          margin: 0 auto 10px;
-        }
-      }
     }
   }
 }
@@ -124,9 +108,7 @@ ul.grid {
   background: #fff;
   text-align: center;
   border-bottom: 1px solid #eaeaea;
-  .container {
-    padding: 90px 0 50px;
-  }
+  padding: 90px 0 50px;
   .title-area {
     h2 {
       color: #2F362F;
@@ -167,8 +149,8 @@ ul.grid {
 // section difference
 .difference {
   background: #ffffff;
+  padding: 90px 0;
   .container {
-    padding: 90px 0;
     display: flex;
   }
   .media {
@@ -224,9 +206,7 @@ ul.grid {
 .latest-projects {
   background: #393f43;
   text-align: center;
-  .container {
-    padding: 90px 0 50px 0;
-  }
+  padding: 90px 0 50px 0;
   .title-area {
     h2 {
       color: #ddd;
@@ -293,13 +273,12 @@ ul.grid {
   }
 }
 
+
 // section projects-completed
 .projects-completed {
   background: #2f3539;
   text-align: center;
-  .container {
-    padding: 40px 0 30px;
-  }
+  padding: 40px 0 30px;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -334,9 +313,7 @@ ul.grid {
 .amazing-features2 {
   background: #fff;
   text-align: center;
-  .container {
-    padding: 90px 0 30px;
-  }
+  padding: 90px 0 30px;
   .title-area {
     h2 {
       color: #2F362F;
@@ -374,9 +351,7 @@ ul.grid {
 // section testimonials
 .testimonials {
   background: #3498db;
-  .container {
-    padding: 90px 0;
-  }
+  padding: 90px 0;
   .title-area {
     text-align: center;
     h2 {
@@ -439,9 +414,7 @@ ul.grid {
 // section latest-news
 .latest-news {
   background: #fff;
-  .container {
-    padding: 90px 0;
-  }
+  padding: 90px 0;
   .title-area {
     text-align: center;
     h2 {
@@ -536,9 +509,7 @@ ul.grid {
 .amazing-team {
   background: #393f43;
   text-align: center;
-  .container {
-    padding: 90px 0;
-  }
+  padding: 90px 0;
   .title-area {
     h2 {
       color: #ddd;
@@ -602,9 +573,7 @@ ul.grid {
 .working-process {
   background: #fff url("http://demo.ovathemes.com/marketer/wp-content/themes/marketerova/assets/img/process-line.png") 50% 50% no-repeat;
   text-align: center;
-  .container {
-    padding: 90px 0 100px;
-  }
+  padding: 90px 0 100px;
   .title-area {
     h2 {
       color: #2F362F;
@@ -666,10 +635,9 @@ ul.grid {
 // section join-waiting
 .join-waiting {
   background: #3498db;
+  padding: 50px 0;
   .container {
-    padding: 50px 0;
     display: flex;
-
   }
   .img {
     padding: 30px 90px;
