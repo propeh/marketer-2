@@ -21,13 +21,13 @@ ul.grid {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
-  li {
+  > li {
     padding: 0 15px;
     width: 33.333%;
     @media screen and (max-width: 1080px) {
       width: 50%;
     }
-    @media screen and (max-width: 768px) {
+    @include screen-sm {
       width: 100%;
     }
   }
@@ -485,10 +485,13 @@ ul.grid {
               }
               a {
                 font-size: 14px;
-                color: red;
+                color: #999;
                 padding-left: 5px;
                 &.name {
                   font-style: italic;
+                }
+                &:hover {
+                  color: #3498db;
                 }
               }
             }
@@ -518,51 +521,59 @@ ul.grid {
       color: #bbb;
     }
   }
-  ul.grid {
-    li {
-      .item {
-        img {
-          width: 125px;
-          border: 6px solid #fff;
-          border-radius: 50%;
-          margin-bottom: 20px;
-        }
-        .name {
-          font-size: 18px;
-          font-weight: 600;
-          color: #ddd;
-          margin-bottom: 8px;
-        }
-        .role {
-          font-size: 15px;
-          font-style: italic;
-          color: #ccc;
-          margin-bottom: 40px;
-          position: relative;
-          &::after {
-            content: "";
-            width: 50px;
-            height: 3px;
-            background: #3498db;
-            position: absolute;
-            right: 158px;
-            bottom: -24px;
-          }
-        }
-        .intro {
-          font-size: 15px;
-          line-height: 1.5;
-          color: #ccc;
-          padding: 0 30px;
-          margin-bottom: 10px;
-        }
-        .sns-link {
-          ul {
-            display: flex;
-            li {
-
-            }
-          }
+  .item {
+    img {
+      width: 125px;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ddd;
+      margin-bottom: 8px;
+    }
+    .role {
+      font-size: 15px;
+      font-style: italic;
+      color: #ccc;
+      margin-bottom: 40px;
+      position: relative;
+      &::after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background: #3498db;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -24px;
+        margin: auto;
+      }
+    }
+    .intro {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #ccc;
+      padding: 0 30px;
+      margin-bottom: 10px;
+    }
+    .sns-link {
+      display: flex;
+      justify-content: center;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #999;
+        margin: 0 5px;
+        &:hover {
+          color: #fff;
+          background: #3498db;
         }
       }
     }
@@ -663,6 +674,9 @@ ul.grid {
         border-radius: 4px;
         background: transparent;
         margin-bottom: 5px;
+        @include screen-sm {
+          width: 100%;
+        }
       }
       .label {
         display: flex;
