@@ -4,6 +4,9 @@
 // top-header
 .top-header {
   background: #333;
+  @include screen-sm {
+    display: none;
+  }
   .container {
     display: flex;
     justify-content: space-between;
