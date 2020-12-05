@@ -4,36 +4,47 @@ footer {
 
 .footer-top {
   padding: 60px 0;
-  h2 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 45px;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 3px;
-      background: #3498db;
-      bottom: -25px;
-      left: 0;
+  .container {
+    display: flex;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 45px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: #3498db;
+        bottom: -25px;
+        left: 0;
+      }
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #dddddd;
+      margin-bottom: 20px;
+    }
+    i {
+      font-size: 18px;
+      color: #ddd;
     }
   }
-  p {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #dddddd;
-    margin-bottom: 20px;
-  }
-  i {
-    font-size: 18px;
-    color: #ddd;
+  ul.grid {
+    > li {
+      width: 25%;
+      @include screen-sm {
+        width: 100%;
+      }
+    }
   }
 
+
   .seo-score {
-    width: 25%;
-    padding: 0 15px;
     p {
 
     }
@@ -68,8 +79,6 @@ footer {
     }
   }
   .useful-links {
-    width: 25%;
-    padding: 0 15px;
     ul {
       li {
         border-bottom: 1px solid #dddddd;
@@ -85,8 +94,6 @@ footer {
     }
   }
   .footer-latest-projects {
-    width: 25%;
-    padding: 0 15px;
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -116,8 +123,6 @@ footer {
     }
   }
   .contact-details {
-    width: 25%;
-    padding: 0 15px;
     .footer-contact {
       display: flex;
       margin-bottom: 4px;
